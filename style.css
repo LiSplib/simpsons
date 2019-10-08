@@ -1,0 +1,148 @@
+@font-face{
+    font-family: 'Simpsonfont';
+    src: url('font/Simpsonfont\ DEMO.otf')
+}
+body{
+    background: #e08e95;
+    --boxshad:rgb(68, 64, 64);
+    --bg: #3ba496;
+    --yell: #ffd521;
+    color: var(--yell);
+    line-height: 1.3em;
+}
+
+.vignettes .caroussel img{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    border: 2px solid white;
+    box-shadow: 2px 10px 10px var(--boxshad);
+    transition: all 1s;
+}
+
+.vignettes .caroussel a:not(:hover) img{
+    -webkit-filter: grayscale(1) blur(5px);
+}
+
+.vignettes{
+    flex-direction: row;
+    width: 90vw;
+    height: 180px;
+    overflow: scroll;
+    box-shadow: 2px 10px 10px var(--boxshad);
+    margin: 10px;
+    background: var(--bg);
+}
+.caroussel{
+    display: inline-flex;
+    flex: 1;
+}
+
+h1, h2{
+    font-family: 'Simpsonfont';
+    color: #ffd521;
+    text-shadow: 1px 2px 2px black;
+    text-align: center;
+}
+
+.catalogues{
+    display: flex;
+    justify-content: center;
+}
+
+.catalogues a{
+    font-family: 'Simpsonfont';
+    color: #ffd521;
+    text-shadow: 1px 2px 2px black;
+    width: 100%;
+    text-decoration: none;
+}
+
+.catalogues a p{
+    text-align: center;
+}
+
+
+button{
+    box-shadow: 2px 10px 10px var(--boxshad);
+    display: flex;
+    flex: 1;
+    margin: 0 5px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    background: var(--bg);
+}
+
+button:hover{
+    border: 2px dashed var(--yell);
+    background: #40b8a8;
+}
+
+.vignettes .caroussel img:hover{
+    transform: scale(0.9) rotate(-5deg);
+    cursor: zoom-in;
+}
+
+
+article{
+    box-shadow: 2px 10px 10px var(--boxshad);
+    background: var(--bg);
+    width: 90vw;
+    margin: 10px;
+}
+article img{
+    margin: 5px;
+    width: 88vw;
+}
+
+article h2{
+    text-align: center;
+}
+
+article p{
+    padding: 2%;
+}
+
+@media screen and (min-width: 768px){
+    h1{
+       font-size: calc(2vw + 2vh + 1vmin);
+   }
+
+   .container{
+       display: flex;
+   }
+
+   .vignettes{
+       overflow-x: hidden;
+       overflow-y: visible;
+       contain: strict;
+       height: 93vh;
+       width: calc(33.3vw - 4% - 4px);
+       margin: 2%;
+       min-width: 160px;
+   }
+
+    .vignettes .caroussel{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .vignettes .caroussel img{
+        margin: 0;
+        width: 145px;
+    }
+
+    article{
+        margin: 2%;
+        padding: 2%;
+    }
+
+    article img{
+        width: 66.6vw;
+    }
+
+    .catalogues{
+        margin: 2%;
+    }   
+}
