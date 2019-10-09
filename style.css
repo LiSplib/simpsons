@@ -8,7 +8,7 @@ body{
     --bg: #3ba496;
     --yell: #ffd521;
     color: var(--yell);
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 
 .vignettes .caroussel img{
@@ -43,6 +43,7 @@ h1, h2{
     color: #ffd521;
     text-shadow: 1px 2px 2px black;
     text-align: center;
+    line-height: 1.5em;
 }
 
 .catalogues{
