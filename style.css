@@ -16,14 +16,19 @@ body{
 
 h1, h2{
     font-family: 'Simpsonfont';
+    color: var(--yell);
+    text-shadow: 1px 2px 2px black;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+h2{
     background: linear-gradient(to right, var(--yell),#ff7300);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    /* text-shadow: 1px 2px 2px black; */
-    text-align: center;
-    line-height: 1.5em;
+    text-shadow: none;
 }
 
 figure{
@@ -42,11 +47,11 @@ audio{
     border-radius: 8px;
     box-shadow: 2px 10px 10px var(--yell);
     width: 25vw;
+    min-width: 125px;
 }
 
 audio:hover{
     box-shadow: 0px 5px 20px var(--yell);
-    filter: sepia(50%) saturation(2000);
 }
 
 .catalogues{
@@ -61,7 +66,7 @@ audio:hover{
 }
 
 button{
-    box-shadow: 2px 20px 10px var(--boxshad);
+    box-shadow: 2px 10px 10px var(--boxshad);
     display: flex;
     flex: 1;
     margin: 5px;
@@ -80,6 +85,8 @@ button:hover{
     border: 3px dashed var(--yell);
     background: #40b8a8;
     box-shadow: 0px 5px 20px var(--yell);
+    transform: scale(0.99);
+    font-size: 1.185em;
 }
 
 .vignettes{
@@ -106,6 +113,7 @@ button:hover{
     border: 2px solid white;
     box-shadow: 2px 10px 10px var(--boxshad);
     transition: all 1s;
+    border-radius: 8px;
 }
 
 .vignettes .caroussel img:hover{
@@ -138,6 +146,7 @@ article img{
     box-shadow: 0px 0px 10px var(--boxshad);
     margin: 5px;
     width: 88vw;
+    border-radius: 8px;
 }
 
 article h2{
