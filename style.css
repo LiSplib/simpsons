@@ -1,7 +1,8 @@
 @font-face{
     font-family: 'Simpsonfont';
-    src: url('font/Simpsonfont\ DEMO.otf')
+    src: url('font/Simpsonfont\ DEMO.otf');
 }
+
 body{
     background: #e08e95;
     --boxshad:rgb(68, 64, 64);
@@ -9,6 +10,93 @@ body{
     --yell: #ffd521;
     color: var(--yell);
     line-height: 1.4em;
+    /* recalcul automatique de la taille */
+    font-size: calc(1vw + 1vh + 0.5vmin);
+}
+
+h1, h2{
+    font-family: 'Simpsonfont';
+    background: linear-gradient(to right, var(--yell),#ff7300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    /* text-shadow: 1px 2px 2px black; */
+    text-align: center;
+    line-height: 1.5em;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+figcaption{
+    font-family: 'Simpsonfont';
+    text-shadow: 1px 2px 2px black;
+}
+
+audio{
+    border-radius: 8px;
+    box-shadow: 2px 10px 10px var(--yell);
+    width: 25vw;
+}
+
+audio:hover{
+    box-shadow: 0px 5px 20px var(--yell);
+    filter: sepia(50%) saturation(2000);
+}
+
+.catalogues{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+}
+
+.catalogues a{
+    color: var(--yell);
+    text-decoration: none;
+}
+
+button{
+    box-shadow: 2px 20px 10px var(--boxshad);
+    display: flex;
+    flex: 1;
+    margin: 5px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    background: var(--bg);
+    border: 3px solid var(--bg);
+    color: var(--yell);
+    font-family: 'Simpsonfont';
+    justify-content: center;
+    text-shadow: 1px 2px 2px black;
+    align-items: center;
+}
+
+button:hover{
+    border: 3px dashed var(--yell);
+    background: #40b8a8;
+    box-shadow: 0px 5px 20px var(--yell);
+}
+
+.vignettes{
+    flex-direction: row;
+    overflow: scroll;
+    height: 180px;
+    width: 90vw;
+    box-shadow: 2px 10px 10px var(--boxshad);
+    background: var(--bg);
+    border-radius: 8px;
+    overflow-y: hidden;
+}
+
+.caroussel{
+    display: inline-flex;
+    flex: 1;
+    overflow: hidden;
 }
 
 .vignettes .caroussel img{
@@ -20,78 +108,34 @@ body{
     transition: all 1s;
 }
 
-.vignettes .caroussel a:not(:hover) img{
+.vignettes .caroussel img:hover{
+    transform: scaleX(-1) rotate(-5deg);
+    cursor: zoom-in;
+    box-shadow: 0px 5px 20px var(--yell);
+    border-radius: 8px;
+}
+
+
+/* utilisation du blur sur les images tant quelles ne sont pas sélectionner */
+#thumbnail-list:hover a:not(:hover) img{
     -webkit-filter: grayscale(1) blur(5px);
 }
 
-.vignettes{
-    flex-direction: row;
-    width: 90vw;
-    height: 180px;
-    overflow: scroll;
-    box-shadow: 2px 10px 10px var(--boxshad);
-    margin: 10px;
-    background: var(--bg);
+.container{
+    width: calc(100vw - 3%);
+    margin: 3%;
 }
-.caroussel{
-    display: inline-flex;
-    flex: 1;
-}
-
-h1, h2{
-    font-family: 'Simpsonfont';
-    color: #ffd521;
-    text-shadow: 1px 2px 2px black;
-    text-align: center;
-    line-height: 1.5em;
-}
-
-.catalogues{
-    display: flex;
-    justify-content: center;
-}
-
-.catalogues a{
-    font-family: 'Simpsonfont';
-    color: #ffd521;
-    text-shadow: 1px 2px 2px black;
-    width: 100%;
-    text-decoration: none;
-}
-
-.catalogues a p{
-    text-align: center;
-}
-
-
-button{
-    box-shadow: 2px 10px 10px var(--boxshad);
-    display: flex;
-    flex: 1;
-    margin: 0 5px;
-    font-size: 1.2em;
-    border-radius: 8px;
-    background: var(--bg);
-}
-
-button:hover{
-    border: 2px dashed var(--yell);
-    background: #40b8a8;
-}
-
-.vignettes .caroussel img:hover{
-    transform: scale(0.9) rotate(-5deg);
-    cursor: zoom-in;
-}
-
 
 article{
     box-shadow: 2px 10px 10px var(--boxshad);
     background: var(--bg);
     width: 90vw;
-    margin: 10px;
+    margin-top: 3%;
+    border-radius: 8px;
 }
+
 article img{
+    box-shadow: 0px 0px 10px var(--boxshad);
     margin: 5px;
     width: 88vw;
 }
@@ -106,6 +150,7 @@ article p{
 
 @media screen and (min-width: 768px){
     h1{
+    /* recalcul automatique de la taille */
        font-size: calc(2vw + 2vh + 1vmin);
    }
 
@@ -117,10 +162,16 @@ article p{
        overflow-x: hidden;
        overflow-y: visible;
        contain: strict;
-       height: 93vh;
+       height: 95vh;
+    /* recalcul automatique de la taille */
        width: calc(33.3vw - 4% - 4px);
        margin: 2%;
        min-width: 160px;
+   }
+
+   button:hover{
+       transform: scale(0.98);
+       font-size: 1.15em;
    }
 
     .vignettes .caroussel{
@@ -130,20 +181,22 @@ article p{
     }
 
     .vignettes .caroussel img{
-        margin: 0;
+        margin: 5px;
         width: 145px;
     }
 
     article{
         margin: 2%;
         padding: 2%;
+        width: calc(66.6vw - 4%);
     }
 
     article img{
-        width: 66.6vw;
+        width: calc(66.6vw - 10% - 5%);
     }
 
     .catalogues{
         margin: 2%;
+        width: calc(100vw - 4%);
     }   
 }
