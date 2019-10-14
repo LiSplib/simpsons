@@ -100,6 +100,10 @@ button:hover{
     overflow-y: hidden;
 }
 
+#scroller{
+    scrollbar-color: #ffd521 #3ba496;
+}
+
 .caroussel{
     display: inline-flex;
     flex: 1;
@@ -175,7 +179,8 @@ article p{
     /* recalcul automatique de la taille */
        width: calc(33.3vw - 4% - 4px);
        margin: 2%;
-       min-width: 160px;
+       min-width: 150px;
+       max-width: 450px;
    }
 
    button:hover{

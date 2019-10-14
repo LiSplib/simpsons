@@ -56,6 +56,16 @@ var data = [
                         "large": "famille2.jpg",
                         "description": "La famille Simpson",
                         "title": "La famille Simpson"
+                    },
+                    {
+                        "large": "spider.jpg",
+                        "description": "Spider cochon est le cochon que Homer adopte dans les Simpson le Film.",
+                        "title": "Spider Cochon"
+                    },
+                    {
+                        "large": "noel.jpg",
+                        "description": "Petit Papa Noël est le chien des Simpson. C'est un lévrier. Il a été adopté par Bart et Homer dans le tout premier épisode de la série après avoir été abandonné par son propriétaire à la suite d'une course de lévrier qu'il a lamentablement perdu. Son ancien propriétaire l'avait appelé tout simplement 'Numéro 8', le numéro sous lequel il courrait. Petit Papa Noël est réputé pour être assez stupide et incapable d'écouter un ordre. Si bien que Bart a été obligé de l'envoyer dans une école de dressage, malheureusement sans grand succès. Il a manqué de mourir lorsqu'il s'est retourné l'estomac. La famille a alors dû faire des économies pour lui payer une couteuse opération chez un vétérinaire. Suite à ça, voyant qu'on ne s'occupait plus de lui, il a préféré partir et a fait partie de la meute de chiens de M. Burns avant de revenir chez les Simpson. Celui qui s'occupe le plus de lui est sans doute Bart qui est son propriétaire attitré. Cependant, Bart l'a un peu abandonné lorsqu'il a eu un nouveau chien : Laddie. Maggie aime également passer du temps avec lui. Par ailleurs, il s'entend étonnement bien avec Boule de Neige II, le chat des Simpson. Lors d'une course de lévriers, Petit Papa Noël s'est précipité sur une femelle lévrier dénommée 'Elle est la plus rapide'. Ils ont eu 25 chiots. Ceux-ci ont été adoptés par M. Burns qui voulait en faire un manteau de fourrure. Finalement, les chiots ont été récupérés et adoptés par d'autres habitants de Springfield. Il a également mis enceinte la caniche du docteur Hibbert Par ailleurs, il a été fait allusion au fait qu'il était aussi attiré par les mâles lors du défilé de la gay pride. Il était la mascotte de la Duff et se faisait était appelé Suds McDuff. Il a également été chien policier le temps d'un épisode, c'est Lou qui était son maître. Enfin, il est à noter qu'il aboie très rarement.",
+                        "title": "Petit Papa Noël"
                     }
                 ]
             },
@@ -109,6 +119,11 @@ var data = [
                         "large": "lenny.jpg",
                         "description": "Lenny Leonard (ami d'Homer de la centrale) : apparaît presque toujours avec Carl. Très populaire auprès de ses proches, chanceux et généreux, Marge, Bart et Lisa l'aiment particulièrement. C'est un fan de bowling et on le retrouve souvent dans le bar de Moe. On découvre dans un épisode de la saison 13 qu'il est bouddhiste, tout comme Carl.",
                         "title": "Lenny Leonard"
+                    },
+                    {
+                        "large": "skinner.jpg",
+                        "description": "Seymour Skinner est le principal de l’école élémentaire de Springfield. Sous son éternel costume trop serré se cache un home sévère et strict, mais qui a l’avantage d’être craint et donc respecté par la majorité des élèves de son école. Mais malheureusement, pas de la totalité car si il sait garder son sang froid dans de nombreuses situations, il perd tout ses moyens devant un Bart désireux de faire la nouvelle plus grosse bêtise de sa vie, ou encore face à la terrible bande de Nelson, Jimbo et compagnie. Et bien entendu, dès qu’un de ces lascar prépare une farce, le superintendant Chalmers qui vient régulièrement pour surveiller le travail de Skinner n’est jamais loin… Skinner n'a pas toujours été coincé comme il l'est aujourd'hui. Lorsqu'il a pris les commandes de l'école il y a plusieurs années, il était même plutôt cool. Jusqu'à ce que Andy Hamilton, un ancien élève ne lui fasse une farce tellement horrible que ça l'a littéralement changé : il a enfermé le principal un weekend entier dans une piscine remplie de vers. Le principal Skinner comme il est plus communément appelé dans la série ne cesse de se remémorer le temps où il eut à combattre au Viet Nam, il en fait sans cesse référence. D’ailleurs, alors qu’il participait à cette terrible guerre, il ne portait pas encore ce nom. En effet, cet homme s’appelait alors Armin Tamzarian, son véritable nom. Son meilleur ami s’appelait alors Seymour Skinner et il fut tué à la guerre. Alors qu’il se rendait chez la mère du véritable Seymour Skinner, ne pouvant affronter de devoir dire la vérité à Agnes, Armin se fit passer pour Seymour Skinner et pris sa place. Personne ne se douta de rien jusqu’à ce que le vrai Seymour Skinner qui n’était pas mort revint à Springfield le temps d’un épisode. Mais la relation entre Skinner et celle qu’il appelle « mère » depuis son retour du Viet Nam était trop forte, pas même le véritable fils d’Agnes Skinner ne pouvais venir prendre sa place. Le principal qui vit toujours chez sa mère répond à tous ses caprices ce qui est la source d’innombrables conflits entre ces deux là. Et ce n’est sûrement pas une femme qui pourra les séparer. Seymour en pince pour l’institutrice de Bart, Edna Krapabelle depuis l’anniversaire de Martin où ils se sont embrassés. Depuis ce temps là, Seymour et Edna entretiennent une relation de « Je t’aime / Moi non plus » et l’unique personne qui rend cet amour impossible est bien entendu la mère Skinner. Seymour et Edna devait même se marier mais ce fut impossible à cause d’Agnes. Ainsi, à défaut de pouvoir avoir une relation sérieuse, Seymour et Edna se voient occasionnellement lorsque l’envie leur en prend.",
+                        "title": "Seymour Skinner"
                     }
                 ]
 
@@ -127,12 +142,27 @@ var data = [
                         "large": "gros_tony.jpg",
                         "description": "Gros Tony : chef de la mafia de Springfield et souvent accompagné de ses hommes de main. La mafia fait de récurrentes mais rapides apparitions au cours des épisodes, dans lesquelles on la voit cacher des cadavres sans plus d'information. Malgré cela et malgré quelques plus « gros coups » dans d'autres épisodes, Gros Tony et sa bande ne sont que très rarement inquiétés par les policiers, même quand ils « taquinent » ces derniers à l'arme à feu. Gros Tony a déjà aidé Bart, Marge et Homer mais, à chaque fois, son instinct criminel reprend le dessus et cela se termine mal. Il a un fils du nom de Michael et sa chanson préférée est Radio Love. Il meurt dans la saison 22 épisode Gym Tony et est remplacé par son cousin Gym Tony qui deviendra finalement Gros Tony.",
                         "title": "Gros Tony"
+                    },
+                    {
+                        "large": "tahiti.jpg",
+                        "description": "Tahiti Bob est l'ennemi juré de Bart qui a tenté, par maintes fois, de le tuer. Il est à l'origine l'un des personnages de l'émission de Krusty et s'est retrouvé en prison alors qu'il a tenté de faire arrêter Krusty afin de prendre la tête de l'émission. Il lui arrive de se prendre des râteaux en plein visage de temps en temps. ",
+                        "title": "Tahiti Bob"
+                    },
+                    {
+                        "large": "serpent.jpg",
+                        "description": "Le serpent est l'un des plus redoutés des criminels de Springfield. Il est spécialisé dans les braquages (en particulier au mini-marché) et dans les vols en tout genre. Il a un fils à qui il apprend à suivre les traces de son père.",
+                        "title": "Le Serpent"
+                    },
+                    {
+                        "large": "nelson.jpg",
+                        "description": "Nelson Muntz est l'un des élèves de l'école élémentaire de Springfield. Il est dans la classe de Mlle Krapabelle, la même que Bart. Nelson est la brute épaisse de l'école. Il dicte sa loi à tous les autres enfants et dirige le groupe de loubards. Nelson, Jimbo, Kearney et Dolph forment le quatuor diabolique de la vie élémentaire. Ils s'en prennent régulièrement à Martin Prince pendant et en dehors des heures de cours au vu et au su de tous. En plus d'avoir un caractère violent, il provoque constamment les personnes dans son entourage. On le voit souvent se démarquer de l'arrière-plan après une situation humiliante lorsqu'il rit et montre du doigt la personne dont il se moque ouvertement. Brute en chef, Nelson est en fait un garçon déjà bien amoché par la vie. À son âge, il a du faire face à des situations douloureuses. Abandonné par son père, il vit avec sa mère, une stripteaseuse alcoolique, dans une maison ressemblant plus à une cabane qu'à un domicile. Mais sous ses airs bourru, il n'en est pas moins romantique. Il est sorti avec Lisa le temps d'un épisode et a déclaré ne pas frapper les filles au risque de se faire griffer, mordre et de tomber amoureux (phénomène antérieur à l'agriculture selon ses propres mots)",
+                        "title": "Nelson Muntz"
                     }
                 ]
             }    
 ];
 
-        
+
 var $thumbnailList = document.getElementById("thumbnail-list");
 
 function onButtonClick(){
@@ -160,27 +190,32 @@ function updateSelectedAlbum(newAlbum){
     $thumbnailList.innerHTML = newAlbum.photos.map(photo => {
         const href = `./img/${newAlbum.album_name}/${photo.large}`;
         return `
-        <a href="${href}">
+        <a href="${href}" title="${photo.title}" data-description="${photo.description}">
             <img src="${href}" title="${photo.title}"/>
         </a>
         `;
     }).join("");
+
+    displayPics();
 }
 
 function displayPics(){
     var photos = document.getElementById('thumbnail-list');
     var liens = photos.getElementsByTagName('a');
     var main_picture = document.getElementById('main-picture');
-
     var main_title = document.getElementById('photo').getElementsByTagName('h2')[0];
+    var main_description = document.getElementById('main-description');
+
+
     for(var i = 0; i < liens.length; ++i){
         liens[i].onclick = function(){
+            const descr = this.getAttribute("data-description");
             main_picture.src = this.href;
             main_picture.alt = this.title;
             main_title.firstChild.nodeValue = this.title;
+            main_description.innerHTML = descr;
             return false;
         };
     }
 }
-
 window.onload = displayPics;
