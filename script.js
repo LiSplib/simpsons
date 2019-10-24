@@ -124,6 +124,11 @@ var data = [
                         "large": "skinner.jpg",
                         "description": "Seymour Skinner est le principal de l’école élémentaire de Springfield. Sous son éternel costume trop serré se cache un home sévère et strict, mais qui a l’avantage d’être craint et donc respecté par la majorité des élèves de son école. Mais malheureusement, pas de la totalité car si il sait garder son sang froid dans de nombreuses situations, il perd tout ses moyens devant un Bart désireux de faire la nouvelle plus grosse bêtise de sa vie, ou encore face à la terrible bande de Nelson, Jimbo et compagnie. Et bien entendu, dès qu’un de ces lascar prépare une farce, le superintendant Chalmers qui vient régulièrement pour surveiller le travail de Skinner n’est jamais loin… Skinner n'a pas toujours été coincé comme il l'est aujourd'hui. Lorsqu'il a pris les commandes de l'école il y a plusieurs années, il était même plutôt cool. Jusqu'à ce que Andy Hamilton, un ancien élève ne lui fasse une farce tellement horrible que ça l'a littéralement changé : il a enfermé le principal un weekend entier dans une piscine remplie de vers. Le principal Skinner comme il est plus communément appelé dans la série ne cesse de se remémorer le temps où il eut à combattre au Viet Nam, il en fait sans cesse référence. D’ailleurs, alors qu’il participait à cette terrible guerre, il ne portait pas encore ce nom. En effet, cet homme s’appelait alors Armin Tamzarian, son véritable nom. Son meilleur ami s’appelait alors Seymour Skinner et il fut tué à la guerre. Alors qu’il se rendait chez la mère du véritable Seymour Skinner, ne pouvant affronter de devoir dire la vérité à Agnes, Armin se fit passer pour Seymour Skinner et pris sa place. Personne ne se douta de rien jusqu’à ce que le vrai Seymour Skinner qui n’était pas mort revint à Springfield le temps d’un épisode. Mais la relation entre Skinner et celle qu’il appelle « mère » depuis son retour du Viet Nam était trop forte, pas même le véritable fils d’Agnes Skinner ne pouvais venir prendre sa place. Le principal qui vit toujours chez sa mère répond à tous ses caprices ce qui est la source d’innombrables conflits entre ces deux là. Et ce n’est sûrement pas une femme qui pourra les séparer. Seymour en pince pour l’institutrice de Bart, Edna Krapabelle depuis l’anniversaire de Martin où ils se sont embrassés. Depuis ce temps là, Seymour et Edna entretiennent une relation de « Je t’aime / Moi non plus » et l’unique personne qui rend cet amour impossible est bien entendu la mère Skinner. Seymour et Edna devait même se marier mais ce fut impossible à cause d’Agnes. Ainsi, à défaut de pouvoir avoir une relation sérieuse, Seymour et Edna se voient occasionnellement lorsque l’envie leur en prend.",
                         "title": "Seymour Skinner"
+                    },
+                    {
+                        "large": "krusty.jpg",
+                        "description": "Krusty est créé par le dessinateur Matt Groening et partiellement inspiré par Rusty Nails, un clown de télévision de la ville natale de Groening, Portland dans l'Oregon. Il est dessiné de manière à ressembler à Homer Simpson avec un maquillage de clown, dans le but premier de faire que Bart adore un clown de télévision qui ressemble à son propre père. Sa voix originale s'inspire de Bob Bell, qui interprétait Bozo le clown sur WGN-TV.",
+                        "title": "Krusty le clown"
                     }
                 ]
 
@@ -157,6 +162,28 @@ var data = [
                         "large": "nelson.jpg",
                         "description": "Nelson Muntz est l'un des élèves de l'école élémentaire de Springfield. Il est dans la classe de Mlle Krapabelle, la même que Bart. Nelson est la brute épaisse de l'école. Il dicte sa loi à tous les autres enfants et dirige le groupe de loubards. Nelson, Jimbo, Kearney et Dolph forment le quatuor diabolique de la vie élémentaire. Ils s'en prennent régulièrement à Martin Prince pendant et en dehors des heures de cours au vu et au su de tous. En plus d'avoir un caractère violent, il provoque constamment les personnes dans son entourage. On le voit souvent se démarquer de l'arrière-plan après une situation humiliante lorsqu'il rit et montre du doigt la personne dont il se moque ouvertement. Brute en chef, Nelson est en fait un garçon déjà bien amoché par la vie. À son âge, il a du faire face à des situations douloureuses. Abandonné par son père, il vit avec sa mère, une stripteaseuse alcoolique, dans une maison ressemblant plus à une cabane qu'à un domicile. Mais sous ses airs bourru, il n'en est pas moins romantique. Il est sorti avec Lisa le temps d'un épisode et a déclaré ne pas frapper les filles au risque de se faire griffer, mordre et de tomber amoureux (phénomène antérieur à l'agriculture selon ses propres mots)",
                         "title": "Nelson Muntz"
+                    }
+                ]
+            },
+            {
+                "album_name": "guests",
+                "description": "...",
+                "photos":
+                [
+                    {
+                        "large": "matt.jpg",
+                        "description": "Les Simpson (The Simpsons) sont une série télévisée d'animation américaine créée par Matt Groening et diffusée depuis le 17 décembre 1989 sur le réseau Fox.",
+                        "title": "Matt Groening"
+                    },
+                    {
+                        "large": "hawking.jpg",
+                        "description": "Si peu de gens ont compris ses théories, la personnalité hors du commun et la passion pour la science-fiction de l'astrophysicien Stephen Hawking ont fait de lui une icône de la pop culture, adulée de la communauté geek.",
+                        "title": "Stephen Hawking"
+                    },
+                    {
+                        "large": "green-day.jpg",
+                        "description": " The Simpsons Theme est un single du groupe de punk rock californien Green Day sorti le 24 juillet 2007. Cette chanson reprend le thème d'ouverture de la fameuse série télévisée américaine Les Simpson. Il a atteint dans de nombreux pays de hautes places dans les charts, la 106e sur le Billboard Hot 100 (USA), la 19e sur le UK Singles Chart, et la 16e sur le top des téléchargements au Royaume-Uni. Cette reprise de Green Day a été initialement réalisée dans le cadre du film Les Simpson. On voit en effet tout au début du film les membres du groupe « simpsonisés » jouant le Simpsons Theme sur une barge sur le lac de Springfield. Cependant, la barge fond, le groupe prend des violons et joue en coulant dans le lac acide. Plus tard dans le film, une messe en leur honneur est donnée par le révérend Lovejoy, sur une version funèbre de la chanson American Idiot.",
+                        "title": "Green Day"
                     }
                 ]
             }    
