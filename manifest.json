@@ -1,0 +1,15 @@
+{
+    "name": "Simpson",
+    "icons": [
+     {
+      "src": "img/donuts.png",
+      "sizes": "221x211",
+      "type": "image\/png"
+     }
+   ],
+"start_url": "index.html",
+"display": "standalone",
+"orientation" : "portrait",
+"background_color": "black",
+"theme_color": "black"
+}
