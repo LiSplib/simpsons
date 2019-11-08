@@ -12,11 +12,13 @@
     <body>
 
         <header><h1>Simpson PictureBox</h1>
+            <button style="color: red" type="button" id="btnAdd">Installez moi !</button>
             <figure>
                 <figcaption>Simpson Theme</figcaption>
                 <audio controls src="https://listen.hs.llnwd.net/g2/9/1/8/6/1/902716819.mp3"></audio>
             </figure>
         </header>
+        
         
         <nav class="catalogues">
             <button type="button"><a href="">Acceuil</a></button>
@@ -44,74 +46,92 @@
                         Outre les cinq principaux membres de la famille, il existe de nombreux autres personnages importants ou secondaires dans la famille. Les autres personnages de la famille qui apparaissent le plus souvent sont Abraham Simpson, le père d'Homer, Patty et Selma Bouvier, les sœurs de Marge, les deux animaux de compagnie de la famille, Petit Papa Noël et Boule de Neige II et dans une moindre mesure, Mona Simpson, la mère d'Homer, Jacqueline Bouvier, la mère de Marge, ainsi qu'une large gamme d'autres personnages secondaires. 
                     </p>
             </article>
-
         </div>
         <script>
             if ('serviceWorker' in navigator) {
-
-                /**
-                 * Define if <link rel='next|prev|prefetch'> should
-                 * be preloaded when accessing this page
-                 */
-                const PREFETCH = true;
-
-                /**
-                 * Define which link-rel's should be preloaded if enabled.
-                 */
-                const PREFETCH_LINK_RELS = ['index', 'next', 'prev', 'prefetch'];
-
-                /**
-                 * prefetchCache
-                 */
-                function prefetchCache() {
-                    if (navigator.serviceWorker.controller) {
-
-                        let links = document.querySelectorAll(
-                            PREFETCH_LINK_RELS.map((rel) => {
-                                return 'link[rel=' + rel + ']';
-                            }).join(',')
-                        );
-
-                        if (links.length > 0) {
-                            Array.from(links)
-                                .map((link) => {
-                                    let href = link.getAttribute('href');
-                                    navigator.serviceWorker.controller.postMessage({
-                                        action: 'cache',
-                                        url: href,
-                                    });
-                                });
-                        }
-
-
-                    }
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                    });
+                });
                 }
+                var CACHE_NAME = 'Simpson v1.0';
+                var urlsToCache = [
+                '/',
+                'style.css',
+                'script.js'
+                ];
 
-                /**
-                 * Register Service Worker
-                 */
-                navigator.serviceWorker
-                    .register('sw.js', {
-                        scope: ''
+                self.addEventListener('install', function(event) {
+                // Perform install steps
+                event.waitUntil(
+                caches.open(CACHE_NAME)
+                .then(function(cache) {
+                    console.log('Opened cache');
+                    return cache.addAll(urlsToCache);
                     })
-                    .then(() => {
-                        console.log('Service Worker Registered');
-                    });
-
-                /**
-                 * Wait if ServiceWorker is ready
-                 */
-                navigator.serviceWorker
-                    .ready
-                    .then(() => {
-                        if (PREFETCH) {
-                            prefetchCache();
+                );
+                });
+                self.addEventListener('fetch', function(event) {
+                event.respondWith(
+                    caches.match(event.request)
+                    .then(function(response) {
+                        // Cache hit - return response
+                        if (response) {
+                        return response;
                         }
-                    });
 
-            }
+                        return fetch(event.request).then(
+                        function(response) {
+                            // Check if we received a valid response
+                            if(!response || response.status !== 200 || response.type !== 'basic') {
+                            return response;
+                            }
+
+                            // IMPORTANT: Clone the response. A response is a stream
+                            // and because we want the browser to consume the response
+                            // as well as the cache consuming the response, we need
+                            // to clone it so we have two streams.
+                            var responseToCache = response.clone();
+
+                            caches.open(CACHE_NAME)
+                            .then(function(cache) {
+                                cache.put(event.request, responseToCache);
+                            });
+
+                            return response;
+                        }
+                        );
+                    })
+                    );
+                });
+                self.addEventListener('activate', function(event) {
+
+                var cacheWhitelist = ['pages-cache-v1', 'blog-posts-cache-v1'];
+
+                event.waitUntil(
+                caches.keys().then(function(cacheNames) {
+                    return Promise.all(
+                    cacheNames.map(function(cacheName) {
+                        if (cacheWhitelist.indexOf(cacheName) === -1) {
+                        return caches.delete(cacheName);
+                        }
+                    })
+                    );
+                })
+                );
+                });
+
+
+
+    
+
         </script>
-        <script src="DoYouWantThis.js"></script>
+        <!-- <script src="DoYouWantThis.js"></script> -->
         <script src="script.js"></script>
     </body>
 </html>
